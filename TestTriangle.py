@@ -55,9 +55,9 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(12,2,12),'Isoceles','12,2,12 should be isoceles')
 
     def testScaleneTriangles(self): 
-        self.assertEqual(classifyTriangle(1,2,3),'Scalene','1,2,3 should be scalene')
-        self.assertEqual(classifyTriangle(3,1,2),'Scalene','3,1,2 should be scalene')
-        self.assertEqual(classifyTriangle(5,2,9),'Scalene','5,2,9 should be scalene')
+        self.assertEqual(classifyTriangle(2,3,4),'Scalene','2,3,4 should be scalene')
+        self.assertEqual(classifyTriangle(4,3,2),'Scalene','4,3,2 should be scalene')
+        self.assertEqual(classifyTriangle(5,2,4),'Scalene','5,2,4 should be scalene')
         self.assertEqual(classifyTriangle(100,101,102),'Scalene','100,101,102 should be scalene')
         self.assertEqual(classifyTriangle(5,7,9),'Scalene','5,7,9 should be scalene')
         self.assertEqual(classifyTriangle(32,11,29),'Scalene','32,11,29 should be scalene')
@@ -66,8 +66,8 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,1,100),'NotATriangle','1,1,100 is not a triangle')
         self.assertEqual(classifyTriangle(2,2,50),'NotATriangle','2,2,50 is not a triangle')
         self.assertEqual(classifyTriangle(3,5,100),'NotATriangle','3,5,100 is not a triangle')
-        self.assertEqual(classifyTriangle(1000,100,10),'NotATriangle','1000,100,10 is not a triangle')
-        self.assertEqual(classifyTriangle(123,456,789),'NotATriangle','123,456,789 is not a triangle')
+        self.assertEqual(classifyTriangle(100,10,10),'NotATriangle','100,10,10 is not a triangle')
+        self.assertEqual(classifyTriangle(123,1,4),'NotATriangle','123,1,4 is not a triangle')
         self.assertEqual(classifyTriangle(2,10,100),'NotATriangle','2,10,100 is not a triangle')
 
 if __name__ == '__main__':
